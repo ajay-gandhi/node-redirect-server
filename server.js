@@ -1,6 +1,6 @@
 const http = require("http");
 
-const NEW_HOST = process.argv[2];
+const NEW_HOST = process.env.REDIRECT_HOST;
 if (!NEW_HOST) {
   console.log("Error: No redirect host specified");
   process.exit(1);
@@ -13,4 +13,4 @@ const server = http.createServer((req, res) => {
   res.end();
 });
 
-server.listen(process.argv[3] || 8004);
+server.listen(process.env.PORT || 8000);
