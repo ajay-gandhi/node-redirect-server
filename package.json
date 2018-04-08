@@ -1,0 +1,20 @@
+{
+  "name": "redirect-server",
+  "version": "1.0.0",
+  "description": "Redirect all requests to another HOST",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Ajay Gandhi",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/ajay-gandhi/node-redirect-server.git"
+  },
+  "keywords": [
+    "redirect",
+    "http",
+    "server"
+  ]
+}
